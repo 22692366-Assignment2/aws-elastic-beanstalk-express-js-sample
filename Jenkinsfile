@@ -95,7 +95,7 @@ pipeline {
                                 --username "$DOCKERHUB_USER" \
                                 --password-stdin
 
-                        docker push "DOCKERIMAGE:{BUILD_NUMBER}"
+                        docker push "${DOCKER_IMAGE}:${BUILD_NUMBER}"
                         docker push "${DOCKER_IMAGE}:latest"
                         docker logout
                     '''
