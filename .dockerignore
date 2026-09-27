@@ -1,0 +1,9 @@
+.git
+.github
+node_modules
+reports
+coverage
+test
+Jenkinsfile
+README.md
+npm-debug.log
