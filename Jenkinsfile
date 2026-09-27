@@ -74,7 +74,7 @@ pipeline {
             steps {
                 sh '''
                     docker build \
-                        -t "DOCKERIMAGE:{BUILD_NUMBER}" \
+                        -t "${DOCKER_IMAGE}:${BUILD_NUMBER}" \
                         -t "${DOCKER_IMAGE}:latest" .
                 '''
             }
